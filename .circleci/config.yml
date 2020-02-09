@@ -48,7 +48,7 @@ jobs:
           keys:
             - node-v4-{{ checksum "package.json" }}
             - node-v4-
-      - run: npm install
+      #- run: npm install
       - save_cache:
           key: node-v4-{{ checksum "package.json" }}
           paths:
